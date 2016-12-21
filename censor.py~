@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+def censor(text,word):
+    text = str(text)
+    word = str(word)
+    text_split = text.split()
+    print text_split
+    for n in text_split:
+        if (n==word):
+            for i in range(len(word)+1):
+    return text_split         
+   
+
+print censor("this is hack wack hack","hack")

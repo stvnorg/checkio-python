@@ -1,0 +1,20 @@
+from math import log
+def super_root(n):
+    r = []
+    x=(1+log(n)/log(1))/2
+    for i in range(1000):
+        try:
+            x = (x+log(n)/log(x))/2
+            r.append([x,x**x])
+        except:
+            break
+    print (r[len(r)-1])
+
+if __name__ == '__main__':
+    super_root(4)
+    super_root(27)
+    super_root(81)
+    super_root(1)
+    super_root(100)
+    super_root(1000)
+    super_root(10000000000)

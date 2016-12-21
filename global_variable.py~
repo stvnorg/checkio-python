@@ -1,0 +1,5 @@
+l = []
+
+def gVar(n):
+    for i in n:
+		

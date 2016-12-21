@@ -1,0 +1,10 @@
+def checkio(data):
+    test = 'DB.E'
+    coord = []
+    for i in range(len(data)):
+        for j in range(len(data[0])):
+            if data[i][j] in test:
+                coord.append([i,j,data[i][j]])
+
+    print (coord)
+
